@@ -6,7 +6,9 @@ namespace OrdenamientoYBusquedaG4_2022_I
     {
         static void Main()
         {
-            int[] A = { 5, 3, 9, 7, 10, 1 };
+            //  int[] A = { 5, 3, 9, 7, 10, 1 };
+            int[] A = ArregloAleatorio(50);
+
             ImprimeArreglo(A);
             Ordenamiento.Burbuja(A);
             ImprimeArreglo(A);
@@ -15,7 +17,7 @@ namespace OrdenamientoYBusquedaG4_2022_I
         }
 
 
-        public int [] ArregloAleatorio(int N)
+        public static int [] ArregloAleatorio(int N)
         {
             int[] A = new int[N];
             Random random = new Random();
